@@ -2,118 +2,177 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Mary Jane Doe - Web Designer</title>
+  <title>Mary Jane Doe - Resume</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
       display: flex;
-      margin: 0;
-      background: #f0f4f8;
+      background-color: #f4f4f4;
     }
 
-    .sidebar {
-      background: #2e3b55;
+    .left {
+      background-color: #1e2d50;
       color: white;
-      padding: 20px;
       width: 30%;
-      height: 100vh;
+      padding: 20px;
+      text-align: center;
     }
 
-    .sidebar img {
-      width: 100px;
-      border-radius: 100%;
+    .left img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
       margin-bottom: 15px;
     }
 
-    .sidebar h2, .sidebar p {
+    .left h2 {
       margin: 10px 0;
     }
 
-    .sidebar .contact-info i {
-      margin-right: 8px;
+    .info p {
+      text-align: left;
+      margin: 8px 0;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .skills {
+      text-align: left;
+      margin-top: 20px;
     }
 
     .skills p {
-      margin: 10px 0;
-    }
-
-    .main {
-      padding: 20px;
-      background: white;
-      width: 70%;
-    }
-
-    h1 {
-      margin-bottom: 5px;
-      color: #2e3b55;
-    }
-
-    h3 {
-      margin-top: 20px;
-      color: #2e3b55;
-    }
-
-    .section {
-      margin-bottom: 20px;
+      margin: 10px 0 5px;
+      font-size: 14px;
     }
 
     .bar {
-      background: #ddd;
-      border-radius: 10px;
+      background-color: white;
+      height: 6px;
+      border-radius: 5px;
       overflow: hidden;
-      height: 10px;
     }
 
-    .bar-fill {
-      height: 10px;
-      background: #6ca0dc;
+    .bar span {
+      display: block;
+      height: 100%;
+      background-color: #00b4d8;
+    }
+
+    .circle {
+      margin-top: 20px;
+      width: 80px;
+      height: 80px;
+      border: 5px solid #00b4d8;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: white;
+    }
+
+    .right {
+      width: 70%;
+      padding: 30px;
+      background-color: white;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #1e2d50;
+      border-bottom: 2px solid #a8dadc;
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    .section p, .section li {
+      font-size: 14px;
+      margin: 8px 0;
+    }
+
+    .section ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    strong {
+      display: block;
+      margin-bottom: 3px;
     }
   </style>
 </head>
 <body>
-  <div class="sidebar">
-    <img src="https://img.freepik.com/free-photo/cosmos-flowers_1373-83.jpg?semt=ais_hybrid&w=740" alt="Profile">
+
+  <div class="left">
+    <img src="C:\Users\atulk\Downloads\me.jpg" alt="Mary Jane Doe">
     <h2>Anjali Kumari</h2>
     <p>Web Designer</p>
-    <div class="contact-info">
+
+    <div class="info">
       <p>📞 +53 112234-05</p>
       <p>✉️ janedoesn't.com</p>
       <p>📍 Bethany, France</p>
     </div>
+
     <div class="skills">
-      <h3>Skills</h3>
-      <p>Photoshop</p>
-      <div class="bar"><div class="bar-fill" style="width: 90%;"></div></div>
-      <p>Dreamweaver</p>
-      <div class="bar"><div class="bar-fill" style="width: 80%;"></div></div>
-      <p>Illustrator</p>
-      <div class="bar"><div class="bar-fill" style="width: 85%;"></div></div>
-      <p>Java / CSS</p>
-      <div class="bar"><div class="bar-fill" style="width: 75%;"></div></div>
+      <p>c</p>
+      <div class="bar"><span style="width: 90%;"></span></div>
+      <p>c++</p>
+      <div class="bar"><span style="width: 75%;"></span></div>
+      <p>Dsa</p>
+      <div class="bar"><span style="width: 40%;"></span></div>
+      <p>Html/Css/Js</p>
+      <div class="bar"><span style="width: 70%;"></span></div>
     </div>
-    <p style="margin-top: 20px;">🌐 English</p>
+
+    <div class="circle">English</div>
   </div>
 
-  <div class="main">
-    <h1>Anjali Kumari</h1>
-    <h2>Web Designer</h2>
-
+  <div class="right">
     <div class="section">
-      <h3>About Me</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
     </div>
 
     <div class="section">
-      <h3>Education</h3>
-      <p><strong>2012–2016</strong><br>Junior High School – Montriad Learning School</p>
-      <p><strong>2016–2020</strong><br>BS Fine Arts – Montriad University</p>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <b>2012–2016</b>
+          Junior High School -Montriad Learning School
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </li>
+        <li>
+          <b>2016–2020</b>
+          BS Fine Arts Major in Advertising / Web Design -Montriad University
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+        </li>
+      </ul>
     </div>
 
     <div class="section">
-      <h3>Experience</h3>
-      <p><strong>2019</strong><br>Junior Graphic Designer – Leafpages Advertising</p>
-      <p><strong>2020–Present</strong><br>Web Designer – Sirius Design Agency</p>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <b>2019</b><br>
+          Junior Graphic Designer - Leafpages Advertising
+        </li>
+        <li>
+          <b>2020–Present</b><br>
+          Web Designer - Sirius Design Agency
+        </li>
+      </ul>
     </div>
   </div>
+
 </body>
 </html>
