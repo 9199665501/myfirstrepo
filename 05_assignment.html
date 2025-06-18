@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Anjali</title>
+  <style>
+    * {
+      margin: 5px;
+      padding: 3px;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    header nav {
+      margin-top: 10px;
+    }
+
+    header nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 20px;
+      background: #fff;
+    }
+
+    .hero-text {
+      flex: 0.98;
+    }
+
+    .hero img {
+      width: 150px;
+      height: 180px;
+      border-radius: 50%;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ff6b6b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      flex: 1;
+      min-width: 250px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .featured {
+      margin-top: 30px;
+    }
+
+    .featured-item {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .featured-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #fff;
+      margin-top: 30px;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .featured-item {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .featured-item img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#">Works</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1><b>Anjali Kumari</b><br><b>Graphic Designer/Web Developer</b></h1>
+      <p>Hi, I’m Anjali Kumari — Graphic Designer & Web Developer.
+      I create visually compelling designs and functional websites that bring ideas to life. With a strong foundation in both aesthetics and code, I bridge the gap between creative vision and digital execution. Whether it's branding, UI/UX, or custom web development, I craft solutions that not only look great but work seamlessly.
+      </p>
+     <a class="btn" href="#">Download Resume</a>
+    </div>
+    <img src="C:\Users\atulk\Downloads\me.jpg" alt="John" />
+  </section>
+
+  <section class="section">
+    <h3>Recent Posts</h3>
+    <div class="card-container">
+      <div class="card">
+        <h4>Making a design system from scratch</h4>
+        <small>12 Feb 2024 | Design, Pattern</small>
+        <p>Creating a design from scratch starts with understanding the purpose, audience, and message.
+            It involves brainstorming ideas, sketching concepts, choosing the right color schemes, typography,
+            and layout. From wireframes to final visuals, each step is abalance of creativity and strategy, 
+            aiming to deliver a clear, engaging, and visually consistent result.</p>
+      </div>
+      <div class="card">
+        <h4>Creating pixel perfect icons in Figma</h4>
+        <small>25 dec 2024 | Figma, Icon Design</small>
+        <p>perfect icons in Figma, start with a frame set to a small size (like 16x16 or 32x32 px). Enable
+             the pixel grid and snap to pixel to ensure sharp edges. Use the rectangle or line tool to build 
+             your icon, keeping shapes aligned to the grid. Stick to solid fills and avoid blurs or strokes for
+              a clean, crisp result. Always zoom in to refine details and test at actual size for clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section featured">
+    <h3>Featured Works</h3>
+    <div class="featured-item">
+      <img src="https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/10276154/og_image/optimized/0823-DashboardDesign-Dan-Social-e319a5a8a7ceb75b9e5010740700d409.png" alt="Designing Dashboards">
+      <div>
+        <h4>Designing Dashboards</h4>
+        <small>2024 | Dashboard</small>
+        <p>A well-designed dashboard presents key information clearly and efficiently. Start by understanding
+             user needs and defining the goals—what data matters most.</p>
+      </div>
+    </div>
+    <div class="featured-item">
+      <img src="https://thumbs.dreamstime.com/b/vibrant-impressionist-dog-portrait-captivating-canine-art-piece-blending-photography-painting-techniques-stunning-363222281.jpg" alt="Vibrant Portraits">
+      <div>
+        <h4>Vibrant Portraits of 2024</h4>
+        <small>2024 | Illustration</small>
+        <p>Vibrant portraits are all about bold color, dynamic contrast, and expressive detail. They bring
+        energy and emotion to the subject using saturated hues, playful lighting, and stylized elements.</p>
+      </div>
+    </div>
+    <div class="featured-item">
+      <img src="https://png.pngtree.com/png-clipart/20240823/original/pngtree-vibrant-expressions-the-art-of-colorful-face-painting-png-image_15833521.png" alt="Malayalam Type">
+      <div>
+        <h4>36 Days of Malayalam type</h4>
+        <small>2022 | Typography</small>
+        <p>The term "36 Days of Malayalam" doesn't refer to a widely recognized event or project. However,
+        it might be a variation or local adaptation of the popular global design challenge 36 Days of Type, </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a>
+    </div>
+    <p>Copyright ©2020 All rights reserved</p>
+  </footer>
+
+</body>
+</html>
